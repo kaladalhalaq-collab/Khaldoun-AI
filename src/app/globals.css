@@ -1,0 +1,61 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #09090f;
+  --foreground: #f5f3ff;
+  --purple: #8b5cf6;
+  --gold: #d4af37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #8b5cf6;
+  color: white;
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.purple-glow {
+  box-shadow: 0 0 25px #8b5cf633;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
